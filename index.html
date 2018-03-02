@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>POOJA PATTANSHETTY</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous" />
+  <!-- Material CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" />
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Name Link CSS -->
+  <link rel="stylesheet" href="css/linkstyles.css">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Simple 3D CSS -->
+  <link rel="stylesheet" href="css/style_bg.css" media="screen, projection, print">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="css/animate.min.css">
+
+
+
+
+  <!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+  <script src="js/segment.min.js"></script>
+  <script src="js/d3-ease.v0.6.js"></script>
+  <script src="js/letters.js"></script>
+
+</head>
+
+<body>
+  <!-- Landing Page -->
+  <section id="name" class="animated fadeIn">
+    <div class="container">
+        <div class="color-9">
+          <a class="link link--ilin" href="#">
+            <span>POOJA</span>
+            <span>PATTANSHETTY</span>
+          </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hello animation -->
+  <section id="welcome">
+    <div class="container">
+      <div class="row">
+        <div id="hello-animation" class="deco animated fadeOut">namaste</div>
+      </div>
+  </section>
+
+  <section id=""></section>
+  <!--3D Background -->
+  <!-- <div id="simple3D">
+      <div class="dot"></div>
+      <div class="kinoco"></div>
+      <div class="star"></div>
+    </div> -->
+  <div id="LAYER_ALL">
+    <div id="LAYER_MID">
+    </div>
+    <div id="LAYER_TOP">
+    </div>
+
+  </div>
+  </div>
+  <!-- <div class="main-layer">
+    <div class="container">
+        <div class="color-9">
+            <a class="link link--ilin" href="#">
+              <span>POOJA</span>
+              <span>PATTANSHETTY</span>
+            </a>
+          </div>
+      <div class="row">
+        <div class="col-md-6 left-main">
+
+        </div>
+        <div class="col-md-6">
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <!-- Hello animation -->
+  <script>
+    (function () {
+      var decoLetter = new Letters(document.querySelector('.deco'), {
+        size: 500,
+        weight: 2,
+        color: '#B3E5FC',
+        //color: '#63646B',
+        duration: 3,
+        fade: 1,
+        easing: d3_ease.easeExpOut.ease
+      });
+      decoLetter.hideInstantly();
+      setTimeout(function () {
+        decoLetter.show();
+      }, 200);
+    })();
+  </script>
+
+  <!-- 3D Background -->
+  <script src="js/jquery.simple3D.js"></script>
+  <script>
+    $("#simple3D").simple3D({
+      moveX: 1,
+      moveY: 1,
+      bgImage: true,
+      targetAll: true,
+      reverseX: true,
+      reverseY: true
+    });
+  </script>
+
+
+</body>
+
+</html>
